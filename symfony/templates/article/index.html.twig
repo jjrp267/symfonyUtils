@@ -27,7 +27,7 @@
 						<td>{{ article.description }}</td>
 						<td>{{ article.writter }}</td>
 						<td>{{ article.language }}</td>
-						<td>{{ article.date ? article.date|date('Y-m-d H:i:s') : '' }}</td>
+						<td>{{ article.date ? article.date|date('d M Y H:i') : '' }}</td>
 						<td>
 							<a href="{{ path('app_article_show', {'id': article.id}) }}">show</a>
 							<a href="{{ path('app_article_edit', {'id': article.id}) }}">edit</a>
