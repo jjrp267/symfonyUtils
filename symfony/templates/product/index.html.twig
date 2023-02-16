@@ -5,8 +5,8 @@
 {% block body %}
     <h2>Listado de Productos</h2>
 
-    <table class="table">
-        <thead>
+    <table class="table table-hover">
+        <thead class="table-dark">
             <tr>
                 <th>Id</th>
                 <th>nombre</th>
@@ -35,5 +35,6 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_product_new') }}">Create new</a>
+    <a href="{{ path('app_product_new') }}"><button type="button" class="btn btn-primary">Añadir</button></a>
+
 {% endblock %}
